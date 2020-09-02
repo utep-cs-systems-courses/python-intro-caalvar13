@@ -18,6 +18,8 @@ if __name__ == '__main__':
     words = inputFile.read()
     inputFile.close()
     
-    
+    words = re.sub(r'[^\w\s]', '', words)
+    words = words.strip()
+    words = re.split('[ \n]', words)
     
     
