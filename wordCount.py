@@ -34,13 +34,5 @@ if __name__ == '__main__':
                 
     dict = sorted(dict.items()) 
     
-    outputFile = open(sys.argv[2], 'w')
-     
-    for item in dict:
-        line = str(item[0]) + ' ' + str(item[1]) + '\n'
-        outputFile.write(line)
-        
-    
-    outputFile.close()
     
     
